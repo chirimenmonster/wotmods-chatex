@@ -122,5 +122,5 @@ class BattleTeamChannelFindCriteria(IEntityFindCriteria):
 def sendTeamMessage(text):
     criteria = BattleTeamChannelFindCriteria()
     ctrl = MessengerEntry.g_instance.gui.channelsCtrl.getControllerByCriteria(criteria)
-    if ctrl is not None:
+    if ctrl is not None and ctrl.isEnabled():
         ctrl.sendMessage(text)
