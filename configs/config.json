@@ -1,0 +1,10 @@
+{
+    "en": {
+        "KEY_F5":   "Affirmative!",
+        "KEY_F6":   "Negative!"
+    },
+    "ja": {
+        "KEY_F5":   "了解! (Affirmative!)",
+        "KEY_F6":   "拒否! (Negative!)"
+    }
+}

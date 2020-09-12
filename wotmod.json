@@ -8,11 +8,23 @@
             "files":    [ "configs/meta.xml" ]
         },
         {
+            "method":   "copy",
+            "root":     "",
+            "reldir":   "",
+            "files":    [ "LICENSE" ]
+        },
+        {
             "method":   "apply+python",
             "root":     "res",
             "reldir":   "scripts/client/gui/mods",
             "include":  "\\.py$$",
             "dirs":     [ "python" ]
+        },
+        {
+            "method":   "copy",
+            "root":     "res",
+            "reldir":   "${resource_dir}",
+            "files":    [ "configs/config.json" ]
         }
     ]
 }
